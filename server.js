@@ -18,6 +18,13 @@ var exphbs = require("express-handlebars");
 app.enging("handlebars", exphbs({ defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
+app.get("/", function(req, res) {
+    connection.query("SELECT * FROM plans;", function(err, data) {
+        if (err) throw err;
+        res.render("index", { burgers: data });
+    });
+});
+
 //always listen for connection on the bottom
 app.listen(PORT, function() {
     console.log(PORT + " connected. Listening...")
