@@ -8,7 +8,7 @@
     {{!-- putting an array of burgers to be eaten --}}
     <ul>
         {{#each burgers}}
-            {{!-- want a nested statement where eaten=false --}}
+            {{!-- unless the burger is eaten, the burger will show on the first list --}}
             {{#unless eaten}}
                 <ul>
                     <p>{{this.name}}</p><button class="devour">Eat</button>
