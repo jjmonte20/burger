@@ -1,0 +1,22 @@
+<div class="container">
+    {{!-- going to put an image of a burger on the top --}}
+    <img>
+    {{!-- heading --}}
+    <header>
+        <h1>Burger Time!</h1>
+    </header>
+    {{!-- putting an array of burgers to be eaten --}}
+    <ul>
+        {{#each}}
+            
+        {{/each}}
+    </ul>
+    {{!-- using a form for the user to type in what burger they want to add --}}
+    <form class="burgerTxt">
+        <div class="form-group">
+        <label for="exampleFormControlTextarea1"></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Add Burger</button>
+    </form>
+</div>
