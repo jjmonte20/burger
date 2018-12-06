@@ -9,22 +9,17 @@
     <ul>
         {{#each burgers}}
             {{!-- want a nested statement where eaten=false --}}
-            {{#if false}}
+            {{#unless eaten}}
                 <ul>
-                    <button>{{this.name}}</button>
+                    <p>{{this.name}}</p><button class="devour">Eat</button>
                 </ul>
-            {{/if}}
-        {{/each}}
-    </ul>
-    <ul>
-        {{#each burgers}}
-            {{!-- want a nested statement where eaten=true --}}
-            {{#if true}}
+            {{else}}
                 <ul>
-                    <h4>{{this.name}}</h4>
+                    <h1>{{this.name}}</h1>
                 </ul>
-            {{/if}}
+            {{/unless}}
         {{/each}}
+        {{!-- Next list will be another for loop to show burgers that have been eaten --}}
     </ul>
     {{!-- using a form for the user to type in what burger they want to add --}}
     <form class="burgerTxt">
@@ -37,4 +32,5 @@
 </div>
 
 <script type="text/javascript">
+// will need to insert some logic for when the submit button is hit
 </script>
