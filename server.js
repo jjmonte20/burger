@@ -6,6 +6,7 @@ var PORT = process.env.PORT || 3000;
 var app = express();
 
 // serve static content for the app from the public directory
+// start routing after public since it is the default
 app.use(express.static("public"));
 
 // using this to parse body data as JSON
