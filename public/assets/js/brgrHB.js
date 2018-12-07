@@ -21,4 +21,23 @@ $(function(){
             }
         );
     });
+
+    $(".burgerTxt").on("submit", function(event){
+        // making sure to preventDefault on a submit event
+        event.preventDefault();
+        // console.log("button works");
+        var newBurger = {
+            name: $(".brgrAdd").val().trim()
+        };
+
+        $.ajax("/api/burgers", {
+            type: "POST",
+            data: newBurger
+        }).then(
+            function(){
+                console.log("fired up a new burger");
+                location.reload();
+            }
+        );
+    })
 }); 
