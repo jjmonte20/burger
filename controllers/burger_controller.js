@@ -15,7 +15,7 @@ router.get("/", function(req, res) {
             burgers: data
         };
         // checking to make sure it works
-        console.log(hbsObject);
+        // console.log(hbsObject);
         // rendering into the webpage
         res.render("index", hbsObject);
     });
@@ -23,9 +23,8 @@ router.get("/", function(req, res) {
 
 // need to post data of the new burger somewhere
 router.post("/api/burgers", function(req, res) {
-    burger.insertInto([
-        "name"
-    ], [req.body.name],
+    burger.insertInto(
+        req.body.name,
         function(result) {
         // Send to the new ID made
         res.json({ id: result.insertId });
