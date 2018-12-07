@@ -8,8 +8,9 @@ body {
     margin: auto;
 }
 
-.mainHeading {
-    text-align: center
+header {
+    align-content: center;
+    text-align: center;
 }
 
 /* classes able to add to
