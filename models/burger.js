@@ -11,12 +11,17 @@ var burger = {
         });
     },
     // this function creates a new burger
-    insertInto: function(abName, rowName, cb) {
-        orm.insertInto("burgers", abName, rowName, function(res) {
+    insertInto: function(valueNm, cb) {
+        orm.insertInto("burgers", "name", "eaten", valueNm, function(res) {
             cb(res);
         });
     },
     // this function updates the burgers to be eaten
+    eatBurger: function(colId, valueId, cb){
+        orm.eatBurger("burgers", "eaten", true, colId, valueId, function(res){
+            cb(res);
+        });
+    }
 };
 
 // export the function to the controller

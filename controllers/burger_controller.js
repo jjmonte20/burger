@@ -21,4 +21,23 @@ router.get("/", function(req, res) {
     });
 });
 
+// need to post data of the new burger somewhere
+router.post("/api/burgers", function(req, res) {
+    burger.insertInto([
+        "name"
+    ], [req.body.name],
+        function(result) {
+        // Send to the new ID made
+        res.json({ id: result.insertId });
+    });
+});
+
+// need to update burgers from not eaten to eaten
+router.put("/api/burgers/:id", function(req, res) {
+    // condition of the burger, based on the id of the burger
+    var condition = "id = " + req.params.id;
+
+    // burger.
+});
+
 module.exports = router;
