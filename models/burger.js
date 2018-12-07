@@ -17,8 +17,8 @@ var burger = {
         });
     },
     // this function updates the burgers to be eaten
-    eatBurger: function(colBl, boole, valueId, cb){
-        orm.eatBurger("burgers", colBl, boole, "id", valueId, function(res){
+    eatBurger: function(colBl, condition, cb){
+        orm.eatBurger("burgers", colBl, condition, function(res){
             cb(res);
         });
     }
