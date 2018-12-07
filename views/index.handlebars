@@ -10,7 +10,7 @@
         {{#each burgers}}
             {{!-- unless the burger is eaten, the burger will show on the first list --}}
             {{#unless eaten}}
-                    <p>{{this.id}}. {{this.name}}</p><button class="devour">Eat</button>
+                  {{> burgers/burger-block eaten=true}}  
             {{/unless}}
         {{/each}}
         {{!-- Next list will be another for loop to show burgers that have been eaten --}}
@@ -21,7 +21,9 @@
         {{#each burgers}}
             {{!-- this time I'm looking for burgers that have been eaten --}}
             {{#if eaten}}
-                <h3>{{this.id}}. {{this.name}}</h3>
+                <li>
+                    <p>{{id}}. {{name}}</p>
+                </li>
             {{/if}}
         {{/each}}
     </ul>
