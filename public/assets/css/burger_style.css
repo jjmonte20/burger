@@ -1,4 +1,23 @@
+/* put html and body txt on top */
+html, body {
+    height: 100%;
+    background-color: rgb(255,127,0);
+}
+
+body {
+    margin: auto;
+}
+
 .mainHeading {
     text-align: center
 }
 
+/* classes able to add to
+.readyBrgrsHead
+.uneaten
+.eatBrgrsHead
+.eaten
+.burgerTxt
+.brgrAdd
+
+.eatBurger*/
