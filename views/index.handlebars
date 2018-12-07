@@ -6,6 +6,7 @@
         <h1>Burger Time!</h1>
     </header>
     {{!-- putting an array of burgers to be eaten --}}
+    <h1 class="readyBrgrsHead">Burgers Ready to Eat</h1>
     <ul class="uneaten">
         {{#each burgers}}
             {{!-- unless the burger is eaten, the burger will show on the first list --}}
@@ -17,6 +18,7 @@
     </ul>
 
     {{!-- making a list for eaten burgers --}}
+    <h1 class="eatBrgrsHead">Eaten Burgers</h1>
     <ul class="eaten">
         {{#each burgers}}
             {{!-- this time I'm looking for burgers that have been eaten --}}
