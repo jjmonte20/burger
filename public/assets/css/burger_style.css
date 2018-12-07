@@ -18,6 +18,10 @@ header {
     text-align: center;
 }
 
+.burgs {
+    flex-wrap: wrap;
+}
+
 /* classes able to add to
 .readyBrgrsHead
 .uneaten
