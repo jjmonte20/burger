@@ -1,5 +1,5 @@
 // need to require orm.js
-require("./../config/orm.js");
+var orm = require("./../config/orm.js");
 
 // in the model I want to have statements for when the burger needs to show, one is created, and one updates
 var burger = {
