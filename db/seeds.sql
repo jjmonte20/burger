@@ -1,2 +1,5 @@
+INSERT INTO burgers (name)
+VALUE ("Bacon Double Cheeseburger"),("Patty Melt"),("Slider");
+
 INSERT INTO burgers (name, eaten)
-VALUE ("Bacon Double Cheeseburger", FALSE),("Patty Melt", FALSE),("Slider",FALSE);
+VALUE ("A1 Thick and Hearty", TRUE);

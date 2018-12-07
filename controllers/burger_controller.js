@@ -31,12 +31,23 @@ router.post("/api/burgers", function(req, res) {
     });
 });
 
+// PAY ATTENTION TO WHAT'S BEING PASSED INTO THIS FUNCTION, COUNT HOW MANY ARE NEEDED AND KNOW WHAT'S TOO MUCH
 // need to update burgers from not eaten to eaten
 router.put("/api/burgers/:id", function(req, res) {
     // condition of the burger, based on the id of the burger
     var condition = "id = " + req.params.id;
 
-    // burger.
+    console.log("condition", condition);
+
+    burger.eatBurger({
+        eaten: req.body.eaten
+    }, condition, function(result) {
+        if (result.changedRows == 0) {
+            return res.status(404).end();
+        } else{
+            res.status(200).end();
+        }
+    })
 });
 
 module.exports = router;

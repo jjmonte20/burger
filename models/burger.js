@@ -12,13 +12,13 @@ var burger = {
     },
     // this function creates a new burger
     insertInto: function(valueNm, cb) {
-        orm.insertInto("burgers", "name", "eaten", valueNm, function(res) {
+        orm.insertInto("burgers", "name", valueNm, function(res) {
             cb(res);
         });
     },
     // this function updates the burgers to be eaten
-    eatBurger: function(colId, valueId, cb){
-        orm.eatBurger("burgers", "eaten", true, colId, valueId, function(res){
+    eatBurger: function(colBl, boole, valueId, cb){
+        orm.eatBurger("burgers", colBl, boole, "id", valueId, function(res){
             cb(res);
         });
     }
