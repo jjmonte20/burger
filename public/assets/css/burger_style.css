@@ -28,10 +28,12 @@ header {
 
 .notEatenList {
     float: left;
+    
 }
 
 .eatenList {
     float: right;
+    color: white
 }
 
 .btn-primary {
