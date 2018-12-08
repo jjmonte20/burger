@@ -22,6 +22,22 @@ header {
     flex-wrap: wrap;
 }
 
+.notEatenList, .eatenList {
+    width: 50%;
+}
+
+.notEatenList {
+    float: left;
+}
+
+.eatenList {
+    float: right;
+}
+
+.btn-primary {
+    align-content: center;
+    width: 100%
+}
 /* classes able to add to
 .readyBrgrsHead
 .uneaten
