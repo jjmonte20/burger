@@ -22,13 +22,18 @@ header {
     flex-wrap: wrap;
 }
 
+li {
+    margin-top: 1%;
+    margin-bottom: 1%
+}
+
 .notEatenList, .eatenList {
     width: 50%;
 }
 
 .notEatenList {
     float: left;
-    
+
 }
 
 .eatenList {
