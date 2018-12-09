@@ -10,7 +10,7 @@
         <div class="notEatenList">
             {{!-- putting an array of burgers to be eaten --}}
             <h3 class="readyBrgrsHead">Burgers Ready to Eat</h3>
-            {{!-- <ul class="uneaten"> --}}
+            <ul class="uneaten">
                 {{#each burgers}}
                     {{!-- unless the burger is eaten, the burger will show on the first list --}}
                     {{#unless eaten}}
@@ -18,7 +18,7 @@
                     {{/unless}}
                 {{/each}}
                 {{!-- Next list will be another for loop to show burgers that have been eaten --}}
-            {{!-- </ul> --}}
+            </ul>
         </div>
 
         {{!-- making a list for eaten burgers --}}
@@ -29,7 +29,7 @@
                     {{!-- this time I'm looking for burgers that have been eaten --}}
                     {{#if eaten}}
                         {{!-- <li> --}}
-                            <p>{{id}}. {{name}}</p>
+                            <p class="eatenBurger">{{id}}. {{name}}</p>
                         {{!-- </li> --}}
                     {{/if}}
                 {{/each}}

@@ -17,7 +17,7 @@ if (process.env.JAWSDB_URL){
         // user name
         user: "root",
         // password, for use on a local server
-        password: "",
+        password: "EpicGis20",
         // what database am I connecting to
         database: "burgerDB"
     });
