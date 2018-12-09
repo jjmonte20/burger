@@ -1,6 +1,6 @@
 # burger
 
-https://mighty-shelf-15024.herokuapp.com/
+https://burgertimewbhpddy.herokuapp.com/
 
 Welcome to my burger app
 
