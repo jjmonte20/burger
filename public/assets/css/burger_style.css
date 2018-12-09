@@ -9,6 +9,10 @@ body {
     margin: auto;
 }
 
+img {
+    margin-top: 1%
+}
+
 .d-flex {
     display: flex;
     flex-direction: column;
@@ -17,19 +21,27 @@ body {
 header {
     align-content: center;
     text-align: center;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold
 }
 
 .burgs {
     flex-wrap: wrap;
+
 }
 
 li {
     margin-top: 1%;
-    margin-bottom: 1%
+    margin-bottom: 1%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    /* color: white */
 }
 
 .notEatenList, .eatenList {
-    width: 50%;
+    width: 49.5%;
+    background-color: rgb(255, 255, 255);
+    height: 100%
 }
 
 .notEatenList {
@@ -38,26 +50,46 @@ li {
 }
 
 .readyBrgrsHead {
-    text-align: center
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    /* color: white */
 }
 
 .eatBurger {
     float: right;
+    background-color: rgb(255,127,0);
+    color: white;
+    margin-right: 1%
 }
 
 .eatenList {
     float: right;
-    color: white
+    /* color: white */
+}
+
+.eatBrgrsHead {
+    font-weight: bold
 }
 
 .eatBrgrsHead,.eatenBurger {
-    text-align: center
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .btn-primary {
     align-content: center;
     width: 100%
 }
+
+@media only screen and (max-width: 600px) {
+    .notEatenList, .eatenList {
+        width: 98%;
+        float: none;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+  }
 /* classes able to add to
 .readyBrgrsHead
 .uneaten
