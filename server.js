@@ -1,7 +1,7 @@
 // need to set up the ports and stuff
 const express = require("express");
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 80;
 
 var app = express();
 
